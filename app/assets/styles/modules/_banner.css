@@ -1,0 +1,63 @@
+.banner {
+	display: block;
+	min-height: 100px;
+	height: auto;
+	padding: 20px 20px 0px 20px;
+	background: darkblue;
+	-o-border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-box-shadow: 1px 5px 5px -3px #CCCCCC;
+	-webkit-box-shadow: 1px 5px 5px -3px #CCCCCC;
+	-moz-box-shadow: 1px 5px 5px -3px #CCCCCC;
+}
+.banner-nav {
+	float: right;
+	margin: 25px 0 0 0;
+}
+.banner a {
+	font-size: 15px;
+	font-weight: 300;
+}
+.banner-nav a {
+	color: white;
+    padding: 10px;
+    font-style: oblique;
+    background: darkblue;
+}
+.banner {
+	width: 50%;
+	position: absolute;
+	float: none;
+	display: block;
+	margin-right: auto;
+	text-align: left;
+}
+
+@media (max-width:767px) and (min-width:320px) {
+	.banner {
+	display: block;
+	width: 100%;
+	}
+	.banner-nav {
+		float: left;
+		text-align: center;
+		width: 100%;
+		margin-top: auto;
+		padding: 10px 20px 20px;
+	}
+	.banner-nav a {
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: 20px;
+		padding: 1px 15px 3px;
+	}
+	.banner-nav a:hover {
+		background-color: #FF4141;
+		border: 1px solid #FF4141;
+		color: #FFFFFF;
+	}
+	.banner-nav b:last-child a {
+		padding: 1px 15px 3px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+}

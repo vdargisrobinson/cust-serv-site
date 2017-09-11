@@ -1,0 +1,67 @@
+.hc-search-button .btn-primary {
+	display: block;
+	float: right;
+	width: 80px;
+	height: 40px;
+	position:relative;
+	background: white;
+	border: 0 none;
+	box-shadow: none;
+	border-radius: 0;
+	-o-box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+#btn-text {
+	color: red;
+	margin: auto;
+}
+.btn-primary:hover {
+	background-position: 0 0;
+	background-color: yellow;
+}
+.hc-search-button .hide-in-mobile {
+	display: none;
+}
+.buttons .btn {
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	margin: 55px 25px 0;
+	padding: 13px;
+	text-transform: uppercase;
+	width: 225px;
+}
+.buttons .btn:hover {
+	background-color: #FF4141;
+	border: 1px solid #FF4141;
+	box-shadow: 0 1px 3px #000000;
+	color: #FFFFFF;
+}
+.btn-login, .btn-signup {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #FF4141;
+    color: #FF4141;
+    text-shadow: none;
+    text-transform: none;
+	font-weight:500;
+}
+
+.btn-login:hover, .btn-signup:hover {
+	background-color:#ff4141;
+	border:1px solid #ff4141;
+	color:#fff;
+}
+#topic-toolbar .btn {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.buttons .btn {
+	margin: 55px 25px 0;
+}
