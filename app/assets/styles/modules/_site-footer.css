@@ -1,12 +1,7 @@
-site-footer {
+.site-footer {
+	background-color: darkblue;
 	text-align: center;
 	color: grey;
 	font-size: 14.5px;
 	padding: 20px;
-}
-
-@media (max-width:768px) {
-	.site-footer {
-		font-size: 12px;
-	}
 }

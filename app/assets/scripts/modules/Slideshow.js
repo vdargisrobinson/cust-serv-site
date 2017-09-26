@@ -1,4 +1,8 @@
+"use strict";
+
 /* w3 schools template: https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
+console.log('This is printing from Slideshow.js');
 
 var slideIndex = 0;
 showSlides();

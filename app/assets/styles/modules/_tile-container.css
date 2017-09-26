@@ -14,7 +14,7 @@
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	}
-}
+
 .tile-container a {
 	-o-background: none;
 	-webkit-box-shadow: none;
@@ -25,7 +25,7 @@
 }
 .tile {
 	flex: 1;
-	flex-basis: 15%;
+	flex-basis: 42%;
 	box-sizing: border-box;
 	margin: 20px;
     padding: 20px;
@@ -38,7 +38,6 @@
     transition-timing-function: ease;
 }
 .tile:hover {
-	/*margin: 0;*/
 	box-shadow: 10px 10px 5px black;
 	text-align: center;
 	box-sizing: border-box;
