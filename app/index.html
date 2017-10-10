@@ -28,7 +28,7 @@
 
 <!-- Adding meta tag for CSRF token -->
 <meta content="authenticity_token" name="csrf-param">
-<meta content="YlzPEhAhcRVn59ZSGBKXd1ZhzchwlLPVMDQKrHFAaNM=" name="csrf-token">
+<meta content="ROfu7y2XAX6KLtTzZbeTstntH3DaWEgkv08AJPAeAb8" name="csrf-token">
 <!-- End meta tag for CSRF token -->
 
 <!-- Fav icon for portal -->
@@ -61,9 +61,6 @@
 <link rel="stylesheet" href="assets/styles/modules/_slideshow.css">
 <script src="assets/scripts/modules/Slideshow.js"></script>*/ -->
 
-<!-- build:js assets/scripts/Vendor.js -->
-<script src="assets/scripts/App.js"></script>
-<script src="assets/scripts/modules/Slideshow.js"></script> 
 <!-- endbuild -->
 
 <!-- Access portal settings information via javascript -->
@@ -72,30 +69,38 @@
 <head/>
 
 <body>
-    <header class="banner">
-	    <a href= '/support/home' class='portal-logo'>
+    <header class="banner banner--light">
+	    <a href= 'https://cclsupport.freshdesk.com/support/home' class='banner__portal-logo'>
 		    <img src='assets/images/qsys_sticky_logo.png' alt="Quinntessential Systems Logo">
 		</a> 
-		    <nav class="banner-nav">
-		     <a href="/">Agent Portal</a> |  <a href="/support/profile/edit">Edit profile</a> | <a href="/logout">Sign out</a>
+
+		<!-- Menu Icon (optional code to add later)
+		<div class="banner__menu-icon banner__menu-icon-close-x">
+			<div class="banner__menu-icon__middle"></div>
+		</div>
+		-->
+
+		    <nav class="banner__nav">
+		     <a href="https://cclsupport.freshdesk.com/support/home">Home</a> |  <a href="https://cclsupport.freshdesk.com/support/login">Login</a> | <a href="https://cclsupport.freshdesk.com/support/signup">Sign up</a>
 		    </nav>
 		 <div id="search_section">
 	    <!-- Search and page links for the page -->
-		    <form class="hc-search-form" autocomplete="off" action="/support/search">
+		    <form class="hc-search-form" autocomplete="on" action="https://cclsupport.freshdesk.com/support/search">
 			  <div class="hc-search-input">
-			    <label for="support-search-input" class="hide">Enter your search term here...
+			    <label for="support-search-input" class="hide">
 			    </label>
 				  <input id="support-search-input" placeholder="How can we help you?" type="text" 
-					name="term" class="special" value="" 
-		            rel="page-search" data-max-matches="10">
+					name="term" class="special ui-autocomplete-input" value="" 
+		            rel="page-search" data-max-matches="10" autofocus>
 			  </div>
 			    <div class="hc-search-button">
-				  <button class="btn btn-primary" type="submit" autocomplete="off">
+				  <button class="btn btn-primary" type="submit" autocomplete="on">
 				  <p id="btn-text">Submit</p>
 					<i class="mobile-icon-search hide-tablet"></i> 
 					  <span class="hide-in-mobile">Search</span>
 				  </button>	
 			    </div>
+			    <input type="hidden" name="authenticity_token" value="ROfu7y2XAX6KLtTzZbeTstntH3DaWEgkv08AJPAeAb8=">
 	        </form>
 	     </div>
     </header>
@@ -104,16 +109,16 @@
   </div> 
 
 <div class="tile-container">
-	<h1 class="tile"><a href="/support/support"><i class="fa fa-life-ring fa-2x" aria-hidden="true"></i><br>FAQs</a></h1>
-    <h1 class="tile"><a href="/support/home"><i class="fa fa-home fa-2x" aria-hidden="true"></i><br>Create Ticket</a></h1>
-    <h1 class="tile"><a href="/support/tickets/new"><i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i><br>Check Ticket Status</a></h1>
-    <h1 class="tile"><a href="/support/tickets"><i class="fa fa-ticket fa-2x" aria-hidden="true"></i><br>Milestone Manuals</a></h1>
-    <h1 class="tile"><a href="/support/solutions"><i class="fa fa-flask fa-2x" aria-hidden="true"></i><br>FLIR Manuals</a></h1>
-    <h1 class="tile"><a href="/support/discussions"><i class="fa fa-forumbee fa-2x" aria-hidden="true"></i><br>Airship Manuals</a></h1>
-    <h1 class="tile"><a href="/support/otherlinks"><i class="fa fa-link fa-2x" aria-hidden="true"></i><br>Other links</a></h1>
-    <h1 class="tile"><a href="/support/visit"><i class="fa fa-plane fa-2x" aria-hidden="true"></i><br>Visit our Website</a></h1>
-    <h1 class="tile"><a href="/support/contact"><i class="fa fa-phone fa-2x" aria-hidden="true"></i><br>Home</a></h1>
-    <h1 class="tile"><a href="/support/about"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i><br>Our Work</a></h1>
+	<h1 class="tile"><a href="https://cclsupport.freshdesk.com/support/tickets/new"><i class="fa fa-home fa-2x" aria-hidden="true"></i><br>Create Ticket</a></h1>
+    <h1 class="tile"><a href="https://cclsupport.freshdesk.com/support/login"><i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i><br>Check Ticket Status</a></h1>
+	<h1 class="tile"><a href="https://cclsupport.freshdesk.com/support/solutions/articles/6000038596-flir-rma-s-and-shipping"><i class="fa fa-life-ring fa-2x" aria-hidden="true"></i><br>FLIR RMA / Shipping</a></h1>
+	<h1 class="tile"><a href="https://cclsupport.freshdesk.com/support/solutions/articles/6000038604-airship-programming-hard-drive-down"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i><br>Airship Hard Drive down</a></h1>
+	<h1 class="tile"><a href="https://cclsupport.freshdesk.com/support/solutions/articles/6000038604-airship-programming-hard-drive-down"><i class="fa fa-forumbee fa-2x" aria-hidden="true"></i><br>Airship Manuals</a></h1>
+    <h1 class="tile"><a href="https://cclsupport.freshdesk.com/support/solutions/articles/6000042093-milestone-specs-and-manuals"><i class="fa fa-ticket fa-2x" aria-hidden="true"></i><br>Milestone Manuals</a></h1>
+    <h1 class="tile"><a href="https://cclsupport.freshdesk.com/support/solutions/articles/6000115375-milestone-video-tutorials"><i class="fa fa-link fa-2x" aria-hidden="true"></i><br>Milestone Tutorials</a></h1>
+    <h1 class="tile"><a href="https://cclsupport.freshdesk.com/support/solutions/articles/6000038596-flir-rma-s-and-shipping"><i class="fa fa-flask fa-2x" aria-hidden="true"></i><br>FLIR Manuals</a></h1>
+    <h1 class="tile"><a href="https://cclsupport.freshdesk.com/support/solutions/articles/6000119487-flir-m-series-reset"><i class="fa fa-plane fa-2x" aria-hidden="true"></i><br>FLIR M-Series Reset</a></h1>
+    <h1 class="tile"><a href="https://cclsupport.freshdesk.com/support/solutions/articles/6000119941-flir-dhcp-programming-guide"><i class="fa fa-phone fa-2x" aria-hidden="true"></i><br>FLIR DHCP Programming Guide</a></h1>
 </div>
   </body>
 
@@ -168,6 +173,9 @@
 //]]>
 
 </script> 
+
+<!-- serve webpack-made master .js file to the browser--> 
+<script src="temp/scripts/App.js"></script>
 
 </html>
 	<!-- <nav class="footer-links">
