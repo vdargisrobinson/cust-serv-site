@@ -1,5 +1,6 @@
 "use strict";
 
-/*import Slideshow from './modules/Slideshow';*/
+import $ from 'jquery';
+import StickyHeader from './modules/StickyHeader';
 
-console.log('This is printing from App.js');
+var stickyHeader = new StickyHeader();	
