@@ -10341,6 +10341,8 @@ var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var stickyHeader = new _StickyHeader2.default();
+var devip = __webpack_require__(4);
+devip();
 
 /***/ }),
 /* 2 */
@@ -11153,6 +11155,12 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   Waypoint.Adapter = NoFrameworkAdapter
 }())
 ;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: /Users/Vytas/Documents/Qsys/web-dev/cust-serv-site/node_modules/dev-ip/lib/dev-ip.js Unexpected character '#' (1:0)\nYou may need an appropriate loader to handle this file type.\n| #! /usr/bin/env node\n| /*\n|  * dev-ip");
 
 /***/ })
 /******/ ]);

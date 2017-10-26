@@ -9,10 +9,13 @@
 	
 
 	@mixin atSmall {
-		float: left;
+		display: block;
+		position: absolute;
+		z-index: 10;
+		right: 300px;
 		width: 40%;
 		height: 40px;
-		margin: 20px 0 0 15%;
+		margin: none;
 		background-color: #404040;
 	}
 }

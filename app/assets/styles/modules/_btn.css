@@ -14,7 +14,12 @@
 	-o-border-radius: 0;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
+
+	@mixin atSmall {
+		display: relative;
+	}
 }
+
 #btn-text {
 	color: red;
 	margin: auto;

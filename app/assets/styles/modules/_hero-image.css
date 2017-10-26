@@ -1,0 +1,12 @@
+.hero-image img {
+	display: none;
+
+	@mixin atSmall {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+		z-index: -10;
+	}
+	
+}

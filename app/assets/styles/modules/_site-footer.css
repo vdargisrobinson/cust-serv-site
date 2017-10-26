@@ -1,7 +1,29 @@
 .site-footer {
+	/*display: block;
+	position: absolute;
+	bottom: 0px;
+	float: left;*/
+	display: inline-block;
+	width: 100%;
 	background-color: darkblue;
-	text-align: center;
-	color: grey;
-	font-size: 14.5px;
-	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	margin: none;
+
+	&__text {
+		position: relative;
+		text-align: center;
+		font-size: 14.5px;
+		color: #FFF;
+
+		@mixin atSmall {
+			font-size: 16px;
+			color: rgba(255, 255, 255, 0.7);
+		}
+
+		@mixin atMedium {
+			font-size: 18px;
+			color: rgba(255, 255, 255, 0.5);
+		}
+	}
 }

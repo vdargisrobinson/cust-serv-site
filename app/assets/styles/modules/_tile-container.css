@@ -1,10 +1,11 @@
 .tile-container {
+	width: 100%;
 	background: darkblue;
 	padding: 0;
 	margin-top: auto;
 	border-radius: 0;
 	border: 0 none;
-	z-index: 1;
+	z-index: -1;
 	display: flex;
 	flex: 1;
 	justify-content: space-between;
@@ -15,20 +16,40 @@
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	padding: 10px 5px 10px 5px;
+
+	@mixin atSmall {
+		/*position: absolute;
+		margin-top: 100px;*/
 	}
+}
 
 .tile-container a {
 	font-size: 17px;
+	color: rgba(255, 255, 255, 0.9);
+	font-weight: 500;
+	line-height: 24px;
+
+	@mixin atSmall {
+		font-size: 26px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	@mixin atMedium {
+		font-size: 34px;
+		color: rgba(255, 255, 255, 0.5);
+	}
 }
+
+.tile-container a:hover {
+	color: red;
+}
+
 .tile {
-	
 	flex-basis: 47%;
-	/*height: 125px;
-	width: 125px;*/
 	box-sizing: border-box;
     background-color: darkblue;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     line-height: 14px;
     border-radius: 20px;
@@ -38,9 +59,18 @@
     transition-timing-function: ease;
 
     @mixin atSmall {
-    	margin: 20px;
-    	padding: 20px;
+    	flex-basis: 25%;
+    	margin: 10px;
+    	padding: 10px;
     	text-align: center;
+    	line-height: 24px;
+    }
+
+    @mixin atMedium {
+    	margin: 30px;
+    	padding: 30px;
+    	text-align: center;
+    	line-height: 36px;
     }
 }
 .tile:hover {

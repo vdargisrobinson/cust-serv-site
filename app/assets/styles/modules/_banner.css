@@ -3,16 +3,16 @@
 	position: relative;
 	width: 100%;
 	min-height: 100px;
-	height: auto;
 	padding: 20px 20px 20px 20px;
 	background: darkblue;
 
 	@mixin atSmall {
 		position: fixed;
+		display: block;
+		min-height: 70px;
 	}
 
-	@mixin atMedium {
-		position: fixed;
+	@mixin atSmall {
 
 		&--light {
 			background-color: rgba(23, 51, 72, .55);
@@ -26,10 +26,38 @@
 		height: 100px;
 
 		@mixin atSmall {
-			float: left;
+			display: none;
+		}
+
+		@mixin atMedium {
+			display: inline-block;
+			position: absolute;
+			margin: none;
+			left: 5px;
+			top: 5px;
+			width: 20%;
+			height: 60px;
 		}
 	}
 
+	&__portal-icon img {
+		display:none;
+
+		@mixin atSmall {
+			display: inline-block;
+			left: 5px;
+			top: 5px;
+			bottom: 5px;
+			height: 60px;
+			width: 60px;
+			position: absolute;
+		}
+
+		@mixin atMedium {
+			display: none;
+		}
+
+	}
 	&__nav {
 		text-align: center;
 		width: 100%;
@@ -37,8 +65,11 @@
 		padding: 10px 20px 20px;
 
 		@mixin atSmall {
-			float: right;
-			margin: 25px 0 0 0;
+			display: relative;
+			position: absolute;
+			text-align: right;
+			z-index: 10;
+			margin-top: 5px;
 		}
 	}	
 
@@ -56,6 +87,7 @@
 
 	    @mixin atSmall {
 	    	padding: 10px 15px 3px;
+	    	margin-left: 5px;
 		}
 	}
 
